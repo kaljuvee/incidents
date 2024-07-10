@@ -1,7 +1,10 @@
+protobuf==3.20.0
 streamlit
-langchain 
-langchain_community 
-chromadb 
-langchain-openai
+pandas
+numpy
 scikit-learn
+langchain
 sentence-transformers
+chromadb
+langchain-openai
+openai
