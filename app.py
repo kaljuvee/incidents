@@ -12,6 +12,8 @@ from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
+# some comments
+
 load_dotenv()
 # Set up OpenAI API key
 openai_api_key = os.environ.get("OPENAI_API_KEY")
