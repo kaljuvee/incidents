@@ -1,0 +1,101 @@
+IncidentID,IncidentDescription,SolutionDescription,TechnicianDispatched,SolutionType,SolutionTimeMin
+1,Fuel dispenser not working,Replaced faulty fuel dispenser part,John Doe,TechnicianDispatched,717
+2,Card reader malfunction,Reset and tested card reader,Jane Smith,Phone,472
+3,Spill near pump,Conducted cleanup and checked for leaks,Mike Johnson,TechnicianDispatched,120
+4,Low fuel inventory,Ordered and refilled fuel tanks,Emily Davis,Phone,671
+5,Air pump not working,Repaired air pump compressor,Chris Brown,TechnicianDispatched,564
+6,Restroom out of order,Fixed plumbing issue,Laura Wilson,Phone,832
+7,Lighting in canopy flickering,Replaced defective light bulbs,David Lee,TechnicianDispatched,233
+8,Car wash not operational,Repaired car wash motor,Amy Taylor,Phone,436
+9,Refrigerator not cooling,Replaced refrigerator compressor,James White,TechnicianDispatched,468
+10,Trash bins overflowing,Emptied and sanitized trash bins,Michael Harris,Phone,943
+11,Gasoline smell in store,Checked for leaks and ventilated store,Sarah Clark,TechnicianDispatched,168
+12,Ice machine broken,Repaired ice machine motor,Daniel Robinson,Phone,157
+13,Air conditioning not working,Serviced air conditioning unit,Patricia Martinez,TechnicianDispatched,248
+14,Leak in roof,Repaired roof leak,Anthony Anderson,Phone,901
+15,Payment system offline,Restarted and tested payment system,Jessica Thompson,TechnicianDispatched,85
+16,Water dispenser not working,Repaired water dispenser,Mark Thomas,Phone,746
+17,Security camera malfunction,Replaced and tested security camera,Jennifer Jackson,TechnicianDispatched,482
+18,Overcharging customers,Recalibrated fuel dispensers,Kevin Lewis,Phone,829
+19,Window broken,Replaced broken window,Kimberly Scott,TechnicianDispatched,846
+20,WiFi not working,Reset and tested WiFi router,Jason Walker,Phone,120
+21,Gasoline prices not updating,Fixed price display system,Paul Young,TechnicianDispatched,575
+22,Air quality issues,Checked ventilation and air filters,Rachel King,Phone,421
+23,Fuel leak detected,Sealed leak and tested system,William Perez,TechnicianDispatched,578
+24,Power outage,Checked and reset circuit breakers,Barbara Carter,Phone,713
+25,Coffee machine broken,Repaired coffee machine heating element,Steven Evans,TechnicianDispatched,407
+26,Signage lights out,Replaced signage light bulbs,Deborah Collins,Phone,94
+27,Unauthorized access,Reinforced security protocols and locks,Matthew Stewart,TechnicianDispatched,552
+28,Propane tank not filling,Repaired propane dispenser,Rebecca Sanchez,Phone,190
+29,ATM out of cash,Refilled ATM and checked systems,Charles Morris,TechnicianDispatched,244
+30,Car wash payment issues,Reset car wash payment system,Melissa Rogers,Phone,191
+31,Soda fountain not dispensing,Repaired soda fountain pump,Thomas Reed,TechnicianDispatched,247
+32,Freezer not freezing,Replaced freezer thermostat,Ashley Cook,Phone,269
+33,Pump not printing receipts,Repaired receipt printer,Susan Murphy,TechnicianDispatched,377
+34,Strong odor in restroom,Checked and cleaned restroom,Joseph Bell,Phone,895
+35,Oil spill in parking lot,Conducted cleanup and disposal,Karen Rivera,TechnicianDispatched,639
+36,Driveway potholes,Repaired and resurfaced driveway,Nicholas Howard,Phone,359
+37,Expired inventory,Removed expired items and restocked,Linda Ward,TechnicianDispatched,990
+38,Noisy HVAC system,Serviced and lubricated HVAC system,Ronald Torres,Phone,565
+39,Toilet not flushing,Repaired toilet flush mechanism,Sandra Bennett,TechnicianDispatched,966
+40,Pump display not working,Replaced pump display unit,Jeffrey Adams,Phone,315
+41,Fire extinguisher missing,Replaced missing fire extinguisher,Michelle Hall,TechnicianDispatched,87
+42,Vandalism on property,Conducted repairs and increased security,Andrew Nelson,Phone,106
+43,Outdated software,Updated and tested system software,Donna Mitchell,TechnicianDispatched,651
+44,Water leak in ceiling,Repaired ceiling water leak,Edward Roberts,Phone,247
+45,First aid kit empty,Refilled first aid kit,Emily Turner,TechnicianDispatched,427
+46,Dirty fuel filters,Replaced fuel filters,Joshua Phillips,Phone,619
+47,Incorrect fuel mixture,Drained and refilled with correct fuel,Angela Campbell,TechnicianDispatched,539
+48,Pump handle broken,Replaced broken pump handle,Ryan Parker,Phone,426
+49,Windshield washer fluid empty,Refilled windshield washer fluid,Stephanie Edwards,TechnicianDispatched,834
+50,Loud noise from pump,Investigated and repaired pump noise,Kenneth Hughes,Phone,544
+51,Trash compactor jammed,Repaired and reset trash compactor,Rebecca Flores,TechnicianDispatched,567
+52,Dirty restroom,Deep cleaned and sanitized restroom,Aaron Morris,Phone,615
+53,Non-functional intercom,Repaired intercom system,Shirley Rivera,TechnicianDispatched,6
+54,Out of receipt paper,Refilled receipt paper and checked system,Patrick Simmons,Phone,460
+55,Broken window shade,Replaced broken window shade,Brittany Gray,TechnicianDispatched,366
+56,Low tire inflator pressure,Adjusted and tested tire inflator,Justin Price,Phone,223
+57,Inaccurate fuel gauge,Calibrated fuel gauge,Margaret Powell,TechnicianDispatched,575
+58,Defective hand sanitizer dispenser,Repaired hand sanitizer dispenser,Larry Diaz,Phone,544
+59,Bad odor from fuel,Checked and treated fuel storage,Janet Butler,TechnicianDispatched,673
+60,Pump hose leak,Replaced leaking pump hose,Roger Barnes,Phone,854
+61,Vehicle stuck in car wash,Assisted vehicle and reset car wash,Andrea Ramirez,TechnicianDispatched,965
+62,Non-functional bathroom sink,Repaired sink plumbing,Jonathan Perez,Phone,274
+63,Malfunctioning exhaust fan,Repaired exhaust fan motor,Sharon Long,TechnicianDispatched,971
+64,Storage room light out,Replaced storage room light bulb,Benjamin Sanders,Phone,771
+65,Stray animals on property,Contacted animal control and secured area,Teresa Patterson,TechnicianDispatched,933
+66,Dirty parking lot,Conducted thorough parking lot cleaning,Gary Jenkins,Phone,397
+67,Ice buildup in freezer,Defrosted and checked freezer settings,Amy Hicks,TechnicianDispatched,819
+68,Alarm system false alerts,Checked and reset alarm system,Frank Perry,Phone,617
+69,Old promotional materials,Removed and updated promotional materials,Katherine Bryant,TechnicianDispatched,854
+70,Defective air hose,Replaced defective air hose,Jack Sanders,Phone,919
+71,Payment terminal slow,Checked and optimized payment terminal,Ruby Foster,TechnicianDispatched,546
+72,Store temperature too hot,Adjusted HVAC settings,Stephen Owens,Phone,719
+73,Gas station roof damaged,Repaired roof damage,Gloria Martinez,TechnicianDispatched,504
+74,Dispenser screen cracked,Replaced cracked dispenser screen,Raymond Hamilton,Phone,237
+75,Electrical outlet not working,Repaired faulty electrical outlet,Debra James,TechnicianDispatched,107
+76,Customers slipping,Applied anti-slip coating,Peter Wood,Phone,791
+77,Air compressor noisy,Serviced and lubricated air compressor,Diana Bailey,TechnicianDispatched,812
+78,Non-functional windshield wiper,Repaired windshield wiper system,Jeremy Ford,Phone,765
+79,Price display error,Corrected price display settings,Julia Coleman,TechnicianDispatched,803
+80,Debris in fuel,Filtered and tested fuel,Keith Jenkins,Phone,185
+81,Hand dryer not working,Repaired hand dryer motor,Rachel Cook,TechnicianDispatched,499
+82,Cracked fuel tank,Sealed and tested fuel tank,Anna Bell,Phone,79
+83,Noisy refrigeration unit,Serviced refrigeration unit,Philip Russell,TechnicianDispatched,685
+84,Stuck fuel nozzle,Repaired and tested fuel nozzle,Denise Bailey,Phone,320
+85,Broken ice cream machine,Repaired ice cream machine compressor,Albert Hughes,TechnicianDispatched,403
+86,Payment card skimming device,Removed device and increased security,Cheryl Washington,Phone,321
+87,Blocked drain in parking lot,Cleared and cleaned drain,Scott Myers,TechnicianDispatched,434
+88,Propane leak,Sealed leak and checked safety protocols,Jacqueline Lee,Phone,360
+89,Out of windshield washer fluid,Refilled windshield washer fluid,Anthony Brown,TechnicianDispatched,431
+90,Gas station logo light out,Replaced logo light,Erica Morgan,Phone,325
+91,Fuel truck late,Contacted supplier and rescheduled delivery,Brian Ramirez,TechnicianDispatched,401
+92,Outdated fire safety signs,Updated fire safety signs,Teresa Clark,Phone,501
+93,Faulty emergency shutoff,Repaired emergency shutoff system,Eric Walker,TechnicianDispatched,516
+94,Ice buildup on canopy,Removed ice and checked drainage,Crystal Jenkins,Phone,421
+95,Leaking air line,Repaired air line and checked pressure,Willie Wright,TechnicianDispatched,619
+96,Non-functional paper towel dispenser,Repaired paper towel dispenser,Rose King,Phone,998
+97,Pump handle stuck,Repaired and tested pump handle,Lawrence Turner,TechnicianDispatched,914
+98,Loose tiles in store,Repaired and secured tiles,Carolyn Adams,Phone,6
+99,Frequent power surges,Checked electrical systems and installed surge protectors,Victor Scott,TechnicianDispatched,265
+100,Fuel tank contamination,Drained tank and replaced with clean fuel,Ruth Simmons,Phone,186
