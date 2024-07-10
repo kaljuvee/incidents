@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import FAISS
 from langchain.document_loaders import DataFrameLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.chains import RetrievalQA
@@ -44,7 +44,7 @@ if uploaded_file is not None:
     documents = loader.load()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
     texts = text_splitter.split_documents(documents)
-    vector_store = Chroma.from_documents(texts, embedding=embeddings)
+    vector_store = FAISS.from_documents(texts, embeddings)
 
     prompt_template = PromptTemplate(
         template="Use the following context to answer the question about gas station incidents: {context}\nQuestion: {question}\nAnswer:",
