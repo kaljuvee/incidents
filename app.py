@@ -10,7 +10,9 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # Set up OpenAI API key
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
