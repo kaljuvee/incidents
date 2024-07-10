@@ -9,3 +9,6 @@ chromadb
 langchain-openai
 openai
 faiss-cpu
+#langchain
+langchain==0.0.270
+pydantic==1.10.13
