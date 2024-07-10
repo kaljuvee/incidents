@@ -11,3 +11,4 @@ openai
 faiss-cpu
 langchain
 langchain-community
+langchain-huggingface
