@@ -14,7 +14,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # Set up OpenAI API key
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+openai_api_key = os.environ.get("OPENAI_API_KEY")
+
+
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2, api_key=openai_api_key)
 
 # Initialize the embeddings
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -53,7 +56,6 @@ if uploaded_file is not None:
         input_variables=["context", "question"]
     )
 
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2)
 
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
