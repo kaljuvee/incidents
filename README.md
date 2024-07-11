@@ -26,5 +26,5 @@
   ### Run the app
   - In VS Code Bash terminal run:
   ```
- streamlit run app.
+  streamlit run app.py
   ```
