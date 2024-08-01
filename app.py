@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import DataFrameLoader
 from langchain.text_splitter import CharacterTextSplitter
@@ -12,16 +12,16 @@ from langchain_openai import ChatOpenAI
 import os
 from dotenv import load_dotenv
 
-# some comments
-
+# Load environment variables
 load_dotenv()
+
 # Set up OpenAI API key
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 
-
+# Initialize the language model
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2, api_key=openai_api_key)
 
-# Initialize the embeddings
+# Initialize the embeddings model
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # Function to get embeddings for a list of texts
@@ -39,13 +39,24 @@ def find_similar_incident(new_incident, df, incident_embeddings):
 # Streamlit app
 st.title("Gas Station Incident Analysis")
 
-# File uploader
-uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+# Option to use the prebuilt data file
+use_default_file = st.checkbox("Use the existing incident log file.")
+default_file_path = "data/incident-log.csv"
 
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
-    st.success("CSV file uploaded successfully!")
+if use_default_file:
+    df = pd.read_csv(default_file_path)
+    st.success("Using the existing incident log file.")
+else:
+    # File uploader
+    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
+    if uploaded_file is not None:
+        df = pd.read_csv(uploaded_file)
+        st.success("CSV file uploaded successfully!")
+    else:
+        df = None
+
+if df is not None:
     # Create vector store and QA chain
     loader = DataFrameLoader(df, page_content_column="IncidentDescription")
     documents = loader.load()
@@ -58,7 +69,6 @@ if uploaded_file is not None:
         input_variables=["context", "question"]
     )
 
-
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
@@ -68,6 +78,27 @@ if uploaded_file is not None:
 
     # Get embeddings for all incident descriptions
     incident_embeddings = get_embeddings(df['IncidentDescription'].tolist())
+
+    # Predefined sample questions
+    sample_questions = [
+        "What should be done if there is a fuel spill?",
+        "How to handle a payment system failure?",
+        "What actions to take if there's a power outage?"
+    ]
+
+    # Display sample questions in a 3-column layout
+    st.subheader("Sample Questions about Gas Station Incidents")
+    num_columns = 3
+    num_questions = len(sample_questions)
+    columns = st.columns(num_columns)
+
+    # Add buttons for sample questions
+    for i in range(num_questions):
+        with columns[i % num_columns]:
+            if st.button(sample_questions[i]):
+                response = qa_chain.invoke(sample_questions[i])
+                answer = response['result']
+                st.write(f"Answer for '{sample_questions[i]}':", answer)
 
     # Question input for general questions
     st.subheader("Ask a question about the incidents")
@@ -93,6 +124,5 @@ if uploaded_file is not None:
                 st.write("Recommendation: Try to solve the issue over the phone.")
         else:
             st.warning("Please describe a new incident.")
-
 else:
-    st.info("Please upload a CSV file to begin.")
+    st.info("Please upload a CSV file to begin or select the option to use the existing incident log file.")
